@@ -135,7 +135,8 @@ This branch also comes with a test scene; you can see how all the pieces fit tog
 
 # License
 
-This code uses a CREATIVE COMMONS license. It is available to be modified, distributed, and iterated upon so long as attribution is given to the creator - that's me :)
+This code uses a CREATIVE COMMONS license. Please read the [full license](/LICENSE.md) for details.
+
 Additionally, while a CC0 license does not prohibit the use of generative AI to modify or otherwise iterate upon the source, I prohibit the use of this code for use with generative AI models. Iterations, forks, and/or copies made with any generative AI agents such as; Claude, ChatGPT, and others, are prohibited by the creator and any forks, iterations, copies, or other made with such models are not reflective of the original source code.
 
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
