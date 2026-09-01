@@ -1,4 +1,5 @@
 # Kit's Simple Dialogue
+### Version 1.0.0
 A simple file for simple textboxes. Proudly made without generative AI.
 
 ## Table of Contents:
@@ -10,7 +11,8 @@ A simple file for simple textboxes. Proudly made without generative AI.
 
 ## What is this?
 This is a dialogue/textbox prefab that creates a textbox, displays text, and sorts out any dialogue options into neat little buttons. Perfect for visual novels, RPGs, or other dialogue-based games. While it certainly is not the most feature rich or robust system, with this, you can get started with making textboxes quickly and easily. 
-+ [Top](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
+
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 ## Getting Started
 To get the dialogue system in your project:
@@ -20,6 +22,8 @@ To get the dialogue system in your project:
 
 Initial setup:
   Go into your project's InputMap and create a new input called "interact"; You can change this later, but for quick-start this is what I recommend. Assign any key to it - I chose "E", but you can do whatever is comfortable.
+  
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 ## How To Use
 ### ADDING THE DIALOGUE SCENE
@@ -54,6 +58,8 @@ Finally, connect the dialogue signal option_button_pressed to a function of your
 Finally, add the newly set up dialogue as a child to the scene
 
 `add_child(new_dialogue)`
+
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 ### SETTING UP THE RECEIVING FUNCTION
 Now that you've set up adding the textbox, you can now set up receivers for your options, if you chose to use them. Make your receiving function, which will be passing the node information, the option chosen, and the branch that your dialogue is currently on.
@@ -113,5 +119,23 @@ Where "foo" is your match statement, and "bar" is the thing you want to print. N
 
 At this point, your dialogue SHOULD be set up and running, if I've outlined everything correctly.
 
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
+
 # Notes and Other Functions
+
+The Dialogue prefab also comes with the signals `text_advanced(text)` and `text_finished`. If you wish to make use of these signals, they must also be connected to your calling node in the same manner as `option_button_pressed`. 
+
+You may replace the default `Button.new()` behavior with instantiating your own button prefab. You may need to adjust some values.
+
+When clearing previous Dialogue instances, I use `find_child(node.name, true, false)` as for some reason in my test scene it does not count as being "owned" by any one node, despite being in the tree. This may be something I fix in the future.
+
+This branch also comes with a test scene; you can see how all the pieces fit together through METICULOUSLY commented code. I tried to make sure everything was explained, but I am a human, and humans make mistakes. Feel free to adjust the code to your liking. Heck, make it an actual plugin (If you do, please tag me on Bluesky @gm-kitkatarine.bsky.social I'm very stupid and have no patience for that sort of stuff.)
+
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
+
 # License
+
+This code uses a CREATIVE COMMONS license. It is available to be modified, distributed, and iterated upon so long as attribution is given to the creator - that's me :)
+Additionally, while a CC0 license does not prohibit the use of generative AI to modify or otherwise iterate upon the source, I prohibit the use of this code for use with generative AI models. Iterations, forks, and/or copies made with any generative AI agents such as; Claude, ChatGPT, and others, are prohibited by the creator and any forks, iterations, copies, or other made with such models are not reflective of the original source code.
+
+[<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
