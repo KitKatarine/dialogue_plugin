@@ -7,7 +7,7 @@ extends Control
 @export var input_delay:float = 1.0;
 
 ## What we want to show the player when it's time to go to the next slide (index 0: next slide, index 1: close textbox)
-@export var progress_indicator:PackedStringArray= [">", "END"]
+var progress_indicator:PackedStringArray= [">", "END"]
 ## The lines that we want to display
 var text_array:PackedStringArray = [];
 ## The current line we want read
