@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://d33kkxdfywivk"]
+
+[ext_resource type="Script" uid="uid://dq6ojv61756ro" path="res://addons/dialoguehandler/dialogue_node.gd" id="1_ijfbv"]
+[ext_resource type="Texture2D" uid="uid://crrvjrvwguixp" path="res://icon.svg" id="2_ow51i"]
+
+[node name="Dialogue" type="Control" unique_id=1849456156]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ijfbv")
+text_speed = null
+input_delay = null
+metadata/_custom_type_script = "uid://dq6ojv61756ro"
+
+[node name="dialogue_graphic" type="NinePatchRect" parent="." unique_id=345555566]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -118.0
+offset_right = 1143.0
+grow_vertical = 0
+texture = ExtResource("2_ow51i")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="textbox_margin" type="MarginContainer" parent="dialogue_graphic" unique_id=2141803936]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="text" type="RichTextLabel" parent="dialogue_graphic/textbox_margin" unique_id=1984461906]
+layout_mode = 2
+mouse_filter = 2
+text = "This is some dialogue text :)"
+scroll_active = false
+
+[node name="advance_text_button" type="TextureButton" parent="." unique_id=1188332324]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="display_text_timer" type="Timer" parent="." unique_id=1750997264]
