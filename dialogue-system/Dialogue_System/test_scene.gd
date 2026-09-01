@@ -47,17 +47,15 @@ func _on_branching_dialogue_pressed(node, option, branch_level):
 					new_dialogue.current_dialogue_branch = 1
 					# For additional branching paths, don't forget to connect the signal again
 					new_dialogue.option_button_pressed.connect(_on_branching_dialogue_pressed)
-					add_child(new_dialogue)
 				"No way":
-					new_dialogue.add_new_text(["Fuck off then."])
-					add_child(new_dialogue)
+					new_dialogue.add_new_text(["Oh, okay..", "[You've made the Godot Robot sad. -2 programmer points.]"])
 		1: 
 			match option:
 				"Yes":
 					new_dialogue.add_new_text(["Wahoo! That's it, it works. I'm done. Fantastic."])
-					add_child(new_dialogue)
 				"Bruh":
-					new_dialogue.add_new_text(["Well, I tried."])
-					add_child(new_dialogue)
+					new_dialogue.add_new_text(["Listen, writing a comprehensive tutorial is hard! There are so many variables, and people comprehend things differently."])
+
+	add_child(new_dialogue)
 					
 # You can also add flags for whatever globals you have in your game, depending on what options were picked! 
