@@ -1,3 +1,5 @@
+![alt text if this works](/graphic.svg)
+
 # Kit's Simple Dialogue
 ### Version 1.0.0
 A simple file for simple textboxes. Proudly made without generative AI.
