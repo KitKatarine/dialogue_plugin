@@ -2,10 +2,15 @@
 A simple file for simple textboxes. Proudly made without generative AI.
 
 ## Table of Contents:
-+ [What is this]()
++ [What is this](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#what-is-this)
++ [Getting Started](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#getting-started)
++ [How To Use](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#how-to-use)
++ [Notes and Other Functions](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#notes-and-other-functions)
++ [License](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#license)
 
 ## What is this?
 This is a dialogue/textbox prefab that creates a textbox, displays text, and sorts out any dialogue options into neat little buttons. Perfect for visual novels, RPGs, or other dialogue-based games. While it certainly is not the most feature rich or robust system, with this, you can get started with making textboxes quickly and easily. 
++ [Top](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 ## Getting Started
 To get the dialogue system in your project:
@@ -109,4 +114,4 @@ Where "foo" is your match statement, and "bar" is the thing you want to print. N
 At this point, your dialogue SHOULD be set up and running, if I've outlined everything correctly.
 
 # Notes and Other Functions
-
+# License
