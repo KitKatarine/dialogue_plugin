@@ -1,6 +1,5 @@
 extends Control
 
-
 ## How fast the text should be printed (Default: 1) 
 ## [br]Higher numbers means slower text.
 @export var text_speed:int = 1;
@@ -31,8 +30,6 @@ signal option_button_pressed(option)
 @onready var text_display:Node = $textbox_graphic/MarginContainer/textbox_text
 
 func _ready() -> void:
-	
-
 	# Assign the passed text to the textbox
 	text_display.text = text_array[current_line]
 	
