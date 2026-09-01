@@ -13,7 +13,7 @@ config_version=5
 config/name="dialogue_system"
 run/main_scene="uid://fnilo2b4xgfb"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Dialogue_System/icon.svg"
 
 [display]
 

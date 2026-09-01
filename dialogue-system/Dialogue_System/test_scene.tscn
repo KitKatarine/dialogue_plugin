@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://fnilo2b4xgfb"]
 
-[ext_resource type="Script" uid="uid://h3t5teqxaxm" path="res://test_scene.gd" id="1_fufy0"]
-[ext_resource type="Texture2D" uid="uid://bxyt0ksgushmf" path="res://icon.svg" id="2_lk8y7"]
+[ext_resource type="Script" uid="uid://h3t5teqxaxm" path="res://Dialogue_System/test_scene.gd" id="1_fufy0"]
+[ext_resource type="Texture2D" uid="uid://bxyt0ksgushmf" path="res://Dialogue_System/icon.svg" id="2_lk8y7"]
 
 [node name="Test_Scene" type="Node" unique_id=2140862903]
 script = ExtResource("1_fufy0")
