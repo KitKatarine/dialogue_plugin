@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://e3qkh0gjq72f"]
+
+[ext_resource type="Script" uid="uid://b8auxmfkevnng" path="res://Dialogue_System/dialogue_behavior.gd" id="1_gxri6"]
+[ext_resource type="Texture2D" uid="uid://bffxbxfn5voyi" path="res://Dialogue_System/textbox.png" id="2_dj67g"]
+
+[node name="Dialogue" type="Control" unique_id=1864632846]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gxri6")
+
+[node name="textbox_graphic" type="NinePatchRect" parent="." unique_id=988875198]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -115.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_dj67g")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="textbox_graphic" unique_id=638078759]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 6
+
+[node name="textbox_text" type="RichTextLabel" parent="textbox_graphic/MarginContainer" unique_id=1054904386]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "TEXT GOES HERE WOWOWOWOWOWOWOWOWOW"
+
+[node name="progress_text" type="RichTextLabel" parent="textbox_graphic" unique_id=1406798424]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+fit_content = true
+scroll_active = false
