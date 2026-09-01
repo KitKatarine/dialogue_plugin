@@ -1,4 +1,4 @@
-![alt text if this works](/graphic.svg)
+![A light blue text bubble with three white lines. Below, the text "Kit's Simple Dialogue" in the same light blue color.](/graphic.svg)
 
 # Kit's Simple Dialogue
 ### Version 1.0.0
