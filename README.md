@@ -23,7 +23,7 @@ To get the dialogue system in your project:
 2) Extract somewhere (such as your default Download folder)
 3) Put the "dialogue-system" folder in your project's res:// directory
 
-Initial setup:
+### Initial setup:
 Go into your project's InputMap and create a new input called "interact"; You can change this later, but for quick-start this is what I recommend. Assign any key to it - I chose "E", but you can do whatever is comfortable.
   
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
