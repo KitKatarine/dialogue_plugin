@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fnilo2b4xgfb"]
+
+[ext_resource type="Script" uid="uid://h3t5teqxaxm" path="res://test_scene.gd" id="1_fufy0"]
+[ext_resource type="Texture2D" uid="uid://bxyt0ksgushmf" path="res://icon.svg" id="2_lk8y7"]
+
+[node name="Test_Scene" type="Node" unique_id=2140862903]
+script = ExtResource("1_fufy0")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1712900432]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 128.0
+grow_horizontal = 2
+texture_normal = ExtResource("2_lk8y7")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
