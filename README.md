@@ -125,13 +125,13 @@ At this point, your dialogue SHOULD be set up and running, if I've outlined ever
 
 # Notes and Other Functions
 
-The Dialogue prefab also comes with the signals `text_advanced(text)` and `text_finished`. If you wish to make use of these signals, they must also be connected to your calling node in the same manner as `option_button_pressed`. 
++ The Dialogue prefab also comes with the signals `text_advanced(text)` and `text_finished`. If you wish to make use of these signals, they must also be connected to your calling node in the same manner as `option_button_pressed`. 
 
-You may replace the default `Button.new()` behavior with instantiating your own button prefab. You may need to adjust some values.
++ You may replace the default `Button.new()` behavior with instantiating your own button prefab. You may need to adjust some values.
 
-When clearing previous Dialogue instances, I use `find_child(node.name, true, false)` as for some reason in my test scene it does not count as being "owned" by any one node, despite being in the tree. This may be something I fix in the future.
++ When clearing previous Dialogue instances, I use `find_child(node.name, true, false)` as for some reason in my test scene it does not count as being "owned" by any one node, despite being in the tree. This may be something I fix in the future.
 
-This branch also comes with a test scene; you can see how all the pieces fit together through METICULOUSLY commented code. I tried to make sure everything was explained, but I am a human, and humans make mistakes. Feel free to adjust the code to your liking. Heck, make it an actual plugin (If you do, please tag me on Bluesky @gm-kitkatarine.bsky.social I'm very stupid and have no patience for that sort of stuff.)
++ This branch also comes with a test scene; you can see how all the pieces fit together through METICULOUSLY commented code. I tried to make sure everything was explained, but I am a human, and humans make mistakes. Feel free to adjust the code to your liking. Heck, make it an actual plugin (If you do, please tag me on Bluesky @gm-kitkatarine.bsky.social I'm very stupid and have no patience for that sort of stuff.)
 
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
