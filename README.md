@@ -137,7 +137,7 @@ At this point, your dialogue SHOULD be set up and running, if I've outlined ever
 
 # License
 
-This code uses a CREATIVE COMMONS license. Please read the [full license](/LICENSE) for details.
+This code uses a CREATIVE COMMONS license. Please read the [full license](https://github.com/KitKatarine/dialogue_plugin?tab=CC0-1.0-1-ov-file) for details.
 
 Additionally, while a CC0 license does not prohibit the use of generative AI to modify or otherwise iterate upon the source, I prohibit the use of this code for use with generative AI models. Iterations, forks, and/or copies made with any generative AI agents such as; Claude, ChatGPT, and others, are prohibited by the creator and any forks, iterations, copies, or other made with such models are not reflective of the original source code.
 
