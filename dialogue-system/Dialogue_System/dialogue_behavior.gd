@@ -16,7 +16,8 @@ var text_array:PackedStringArray = [];
 var current_line:int = 0
 ## The total lines in the array
 var total_lines:int = 0
-
+## This will be 0 for most cases, unless you have multiple branching dialogues for a node, in which case this increases accordingly
+var current_dialogue_branch = 0;
 ## The current number of characters in the string to draw
 var current_character:int = 0;
 
@@ -24,9 +25,9 @@ var current_character:int = 0;
 signal text_advanced(text)
 ## When we have finished reading through all the text, and there is no more to display
 signal text_finished
-
-signal option_button_pressed(option)
-
+## When we've chosen an option for any dialogue paths, connect the node information, option chosen, AND the current branch level to the signal
+signal option_button_pressed(node, option, branchlevel)
+## This is where the text is displayed.
 @onready var text_display:Node = $textbox_graphic/MarginContainer/textbox_text
 
 func _ready() -> void:
@@ -104,13 +105,18 @@ func add_new_text(txt:PackedStringArray):
 	text_array = txt
 	
 func add_dialogue_options(options:PackedStringArray):
+	# For each option that we have available for the dialogue, set up a button for it.
 	for i in options.size():
 		var button = Button.new()
+		# Make the name and the text both the same as the option we're choosing.
 		button.name = options[i]
 		button.text = options[i]
+		# Make it invisible for now - it will be made visible when the dialogue finishes.
 		button.visible = false
+		# Connect the signal and bind the button name to it so we have an idea which button we're choosing.
 		button.pressed.connect(_on_dialogue_button_pressed.bind(button.name))
+		# Add our button to the button container.
 		$textbox_graphic/dialogue_options.add_child(button)
 		
 func _on_dialogue_button_pressed(arg):
-	option_button_pressed.emit(arg)
+	option_button_pressed.emit(self, arg, current_dialogue_branch)
