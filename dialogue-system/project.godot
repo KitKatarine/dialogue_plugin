@@ -14,6 +14,7 @@ config/name="dialogue_system"
 run/main_scene="uid://fnilo2b4xgfb"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://Dialogue_System/icon.svg"
+config/tags=PackedStringArray("prefab", "project_system")
 
 [display]
 
