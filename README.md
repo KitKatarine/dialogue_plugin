@@ -1,3 +1,5 @@
+![A light blue text bubble with three white lines. Below, the text "Kit's Simple Dialogue" in the same light blue color.](/graphic.svg)
+
 # Kit's Simple Dialogue
 ### Version 1.0.0
 A simple file for simple textboxes. Proudly made without generative AI.
@@ -10,18 +12,19 @@ A simple file for simple textboxes. Proudly made without generative AI.
 + [License](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#license)
 
 ## What is this?
-This is a dialogue/textbox prefab that creates a textbox, displays text, and sorts out any dialogue options into neat little buttons. Perfect for visual novels, RPGs, or other dialogue-based games. While it certainly is not the most feature rich or robust system, with this, you can get started with making textboxes quickly and easily. 
+This is a dialogue/textbox prefab for Godot projects that creates a textbox, displays text, and sorts out any dialogue options into neat little buttons. Perfect for visual novels, RPGs, or other dialogue-based games. While it certainly is not the most feature rich or robust system, with this, you can get started with making textboxes quickly and easily. 
 
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 ## Getting Started
 To get the dialogue system in your project:
-  Download the "main" branch .zip file
-  Extract somewhere (such as your default Download folder)
-  Put the "dialogue-system" folder in your project's res:// directory
 
-Initial setup:
-  Go into your project's InputMap and create a new input called "interact"; You can change this later, but for quick-start this is what I recommend. Assign any key to it - I chose "E", but you can do whatever is comfortable.
+1) Download the "main" branch .zip file
+2) Extract somewhere (such as your default Download folder)
+3) Put the "dialogue-system" folder in your project's res:// directory
+
+### Initial setup:
+Go into your project's InputMap and create a new input called "interact"; You can change this later, but for quick-start this is what I recommend. Assign any key to it - I chose "E", but you can do whatever is comfortable.
   
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
@@ -123,19 +126,20 @@ At this point, your dialogue SHOULD be set up and running, if I've outlined ever
 
 # Notes and Other Functions
 
-The Dialogue prefab also comes with the signals `text_advanced(text)` and `text_finished`. If you wish to make use of these signals, they must also be connected to your calling node in the same manner as `option_button_pressed`. 
++ The Dialogue prefab also comes with the signals `text_advanced(text)` and `text_finished`. If you wish to make use of these signals, they must also be connected to your calling node in the same manner as `option_button_pressed`. 
 
-You may replace the default `Button.new()` behavior with instantiating your own button prefab. You may need to adjust some values.
++ You may replace the default `Button.new()` behavior with instantiating your own button prefab. You may need to adjust some values.
 
-When clearing previous Dialogue instances, I use `find_child(node.name, true, false)` as for some reason in my test scene it does not count as being "owned" by any one node, despite being in the tree. This may be something I fix in the future.
++ When clearing previous Dialogue instances, I use `find_child(node.name, true, false)` as for some reason in my test scene it does not count as being "owned" by any one node, despite being in the tree. This may be something I fix in the future.
 
-This branch also comes with a test scene; you can see how all the pieces fit together through METICULOUSLY commented code. I tried to make sure everything was explained, but I am a human, and humans make mistakes. Feel free to adjust the code to your liking. Heck, make it an actual plugin (If you do, please tag me on Bluesky @gm-kitkatarine.bsky.social I'm very stupid and have no patience for that sort of stuff.)
++ This branch also comes with a test scene; you can see how all the pieces fit together through METICULOUSLY commented code. I tried to make sure everything was explained, but I am a human, and humans make mistakes. Feel free to adjust the code to your liking. Heck, make it an actual plugin (If you do, please tag me on Bluesky @gm-kitkatarine.bsky.social I'm very stupid and have no patience for that sort of stuff.)
 
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
 
 # License
 
-This code uses a CREATIVE COMMONS license. It is available to be modified, distributed, and iterated upon so long as attribution is given to the creator - that's me :)
+This code uses a CREATIVE COMMONS license. Please read the [full license](https://github.com/KitKatarine/dialogue_plugin?tab=CC0-1.0-1-ov-file) for details.
+
 Additionally, while a CC0 license does not prohibit the use of generative AI to modify or otherwise iterate upon the source, I prohibit the use of this code for use with generative AI models. Iterations, forks, and/or copies made with any generative AI agents such as; Claude, ChatGPT, and others, are prohibited by the creator and any forks, iterations, copies, or other made with such models are not reflective of the original source code.
 
 [<Top>](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#kits-simple-dialogue)
