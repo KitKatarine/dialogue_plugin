@@ -43,7 +43,7 @@ When you want to make a dialogue textbox, you can then use instantiate() to add 
 
 You can then call the dialogue function add_new_text(), which takes a PackedStringArray - an array of strings. If you want to put branching dialogue choices, you will want your branch to end on the dialogue that shows the choices. Then, you can call add_dialogue_options(), which also is a PackedStringArray.
 ```
-new_dialogue.new_dialogue.add_new_text([
+new_dialogue.add_new_text([
 "This is the first text box",
 "This is the second text box"
 ])
