@@ -4,6 +4,8 @@
 ### Version 1.0.0
 A simple file for simple textboxes. Proudly made without generative AI.
 
+Notes: This is still actively under development as I become more acquainted with the systems that a dialogue system needs - Eventually, I do plan on releasing as a plugin but I cannot make that work right now. 
+
 ## Table of Contents:
 + [What is this](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#what-is-this)
 + [Getting Started](https://github.com/KitKatarine/dialogue_plugin/blob/main/README.md#getting-started)
